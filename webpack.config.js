@@ -8,6 +8,9 @@ module.exports = {
         print: './src/print.js'
     },
     devtool: 'inline-source-map', // 映射错误发生的源文件位置
+    devServer: {
+        contentBase: './dist'
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
