@@ -9,9 +9,4 @@ build/
 package-lock.json
 yarn.lock
 yarn-error.log
-stats.json
-webpack.cookie.js
-webpack.config.local.js
-webpack.config.base.local.js
-webpack.mini.js
 apk/
