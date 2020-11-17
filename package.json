@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "webpackPractice",
   "private": true,
+  "sideEffects": [
+    "./src/some-side-effectful-file.js",
+    "*.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --hotOnly",
+    "start": "webpack-dev-server --hotOnly --open",
     "server": "node server.js",
     "build": "webpack"
   },
@@ -28,10 +32,11 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.4.0",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^4.0.2",
     "webpack-dev-server": "^3.3.12",
+    "webpack-merge": "^5.4.0",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
