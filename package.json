@@ -1,12 +1,12 @@
 {
-  "name": "webpackpractice",
+  "name": "webpackractice",
   "version": "1.0.0",
-  "description": "webpackpractice",
+  "description": "webpackPractice",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --hotOnly",
     "server": "node server.js",
     "build": "webpack"
   },
